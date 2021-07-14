@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgotPassActivity">
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="37:67"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/txt_TitleForgotPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="パスワードの再発行"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_App"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="100dp"
+        app:layout_constraintDimensionRatio="736:634"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TitleForgotPass"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.78"
+        app:srcCompat="@drawable/ic_app" />
+
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="50dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="メールアドレス"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_App" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Email"
+        app:layout_constraintTop_toTopOf="@+id/txt_Email"
+        app:srcCompat="@mipmap/icon_mail" />
+
+
+    <ImageView
+        android:id="@+id/btnSendRePass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="550:151"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Email"
+        app:srcCompat="@drawable/bg_btn_dangnhap" />
+
+    <TextView
+        android:id="@+id/txtGuidi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="65dp"
+        android:layout_marginVertical="15dp"
+        android:text="送信する"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSendRePass"
+        app:layout_constraintStart_toStartOf="@+id/btnSendRePass" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

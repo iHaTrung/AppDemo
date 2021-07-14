@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <TextView
+        style="@style/BottomDialogTitleStyle"
+        android:id="@+id/txtDialogTitle"
+        android:background="@drawable/bottom_dialog_rounded_corner_button_first"
+        android:text="連絡・スケージュール登録" />
+
+    <View style="@style/BottomDialogButtonsSeparator" />
+
+
+    <TextView
+        android:id="@+id/btnEditArticle"
+        style="@style/ButtonDialogButtonText"
+        android:background="@drawable/bottom_dialog_rounded_corner_button_middle"
+        android:text="緊急連絡" />
+
+    <View style="@style/BottomDialogButtonsSeparator" />
+
+    <TextView
+        android:id="@+id/btnCommi"
+        style="@style/ButtonDialogButtonText"
+        android:background="@drawable/bottom_dialog_rounded_corner_button_middle"
+        android:text="連絡事項" />
+
+    <View style="@style/BottomDialogButtonsSeparator" />
+
+    <TextView
+        android:id="@+id/btnAddSchedule"
+        style="@style/ButtonDialogButtonText"
+        android:background="@drawable/bottom_dialog_rounded_corner_button_end"
+        android:text="スケジュール登録 "
+        />
+
+    <TextView
+        android:id="@+id/btnCancelDialog"
+        style="@style/ButtonDialogButtonText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:background="@drawable/bottom_dialog_rounded_corner_button_very_last"
+        android:text="キャンセル" />
+</LinearLayout>

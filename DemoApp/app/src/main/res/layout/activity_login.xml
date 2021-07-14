@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/icon_App"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginVertical="70dp"
+        app:layout_constraintDimensionRatio="736:634"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.78"
+        app:srcCompat="@drawable/ic_app" />
+
+    <EditText
+        android:id="@+id/txt_Email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="メールアドレス"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_App" />
+
+    <EditText
+        android:id="@+id/txt_Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edittext"
+        android:ems="10"
+        android:hint="パスワード"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@id/txt_Email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/txt_Email"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Email" />
+
+    <TextView
+        android:id="@+id/txt_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="パスワードをお忘れの方はこちら"
+        android:textColor="#f77b00"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Password"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Password" />
+
+    <!--    <TextView-->
+<!--        android:id="@+id/txt_hadAcc"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginHorizontal="50dp"-->
+<!--        android:layout_marginTop="44dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="の方はこちら"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/btnlogin"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/txtDangNhap" />-->
+
+    <TextView
+        android:id="@+id/txt_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="新規登録の方はこちら"
+        android:textColorHighlight="#00000000"
+        android:textColorLink="#f77b00"
+        app:layout_constraintStart_toStartOf="@+id/btnlogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtDangNhap" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Email"
+        app:layout_constraintTop_toTopOf="@+id/txt_Email"
+        app:srcCompat="@mipmap/icon_mail" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Password"
+        app:layout_constraintTop_toTopOf="@+id/txt_Password"
+        app:srcCompat="@mipmap/ic_lock" />
+
+    <ImageView
+        android:id="@+id/btnlogin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintDimensionRatio="550:151"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Password"
+        app:srcCompat="@drawable/bg_btn_dangnhap" />
+
+    <TextView
+        android:id="@+id/txtDangNhap"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="62dp"
+        android:layout_marginVertical="15dp"
+        android:text="ログイン"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/btnlogin"
+        app:layout_constraintTop_toTopOf="@+id/btnlogin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

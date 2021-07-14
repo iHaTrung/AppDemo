@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <EditText
+        android:id="@+id/txt_Firstname01"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="姓（カタカナ）*"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Firstname" />
+
+    <EditText
+        android:id="@+id/txt_Name01"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="名（カタカナ）*"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_LastName" />
+
+    <ImageView
+        android:id="@+id/btn_Back"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintDimensionRatio="37:67"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/txt_TitleRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="125dp"
+        android:text="アカウントの作成"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_Firstname"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="姓 *"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_LastName"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="名 *"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/txt_Provincial"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Firstname01" />
+
+    <Spinner
+        android:id="@+id/txt_City"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Provincial" />
+
+    <Spinner
+        android:id="@+id/txt_Team"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintTop_toBottomOf="@+id/txt_City" />
+
+    <Spinner
+        android:id="@+id/txt_Position"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/spinner_style"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Team" />
+
+    <EditText
+        android:id="@+id/txt_Mail"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="メールアドレス *"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Position" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Mail"
+        app:layout_constraintTop_toTopOf="@+id/txt_Mail"
+        app:srcCompat="@drawable/ic_email" />
+
+    <EditText
+        android:id="@+id/txt_Pass"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="パスワード *"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Mail" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_Pass"
+        app:layout_constraintTop_toTopOf="@+id/txt_Pass"
+        app:srcCompat="@mipmap/ic_lock" />
+
+    <EditText
+        android:id="@+id/txt_RetypePass"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/bg_edittext"
+        android:hint="パスワード再入力 *"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Pass" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="32dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_RetypePass"
+        app:layout_constraintTop_toTopOf="@+id/txt_RetypePass"
+        app:srcCompat="@mipmap/ic_lock" />
+
+
+    <ImageView
+        android:id="@+id/btnSendRegister"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="105dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="550:151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_RetypePass"
+        app:layout_constraintWidth_percent="0.5"
+        app:srcCompat="@drawable/bg_btn_dangnhap" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="15dp"
+        android:text="ログイン"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSendRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnSendRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
